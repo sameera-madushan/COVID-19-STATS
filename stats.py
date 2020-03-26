@@ -70,7 +70,7 @@ def country(y):
                     continue
                 i = str(k).capitalize()
                 # print(str(k) + "\n" + str(v))  
-                print('{:<25} {:<10}'.format(i, v))
+                print('{:<25} {:<10}'.format(i, str(v)))
     else:
         print("error")
 
