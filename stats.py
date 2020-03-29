@@ -18,6 +18,7 @@ print(r'''
 ( (__(  O )\ \/ / )(  ) D ((___)(_/ /\__  )  \___ \  )( /    \ )(  \___ \
  \___)\__/  \__/ (__)(____/      (__)(___/   (____/ (__)\_/\_/(__) (____/
     Track COVID-19 stats from command line          [Sameera Madushan]
+            Stay Home, Stay Safe!
 ''')
 
 all()
