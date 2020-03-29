@@ -78,12 +78,15 @@ def country(y):
 def getCountry():
     print("\n")
     my_ip = requests.get("https://ident.me/").content.decode("UTF-8")
-    url = ("https://tools.keycdn.com/geo.json?host={}").format(my_ip)
-    result = requests.get(url).json()
-    search = result["data"]["geo"]["country_name"]
-    print("\nIt looks like you are in {}.".format(search))
-    print("Here are the stats related to your country. (If this prediction is incorrect use option \"3\")\n")
-    country(y=search)
+    url = ("https://api.hackertarget.com/geoip/?q={}").format(my_ip)
+    result = requests.get(url).content.decode('utf-8')
+    search = re.search(r'Country: (.*)',result).group(1)
+    if search:
+        print("\nIt looks like you are in {}.".format(search))
+        print("Here are the stats related to your country. (If this prediction is incorrect use option \"3\")\n")
+        country(y=search)
+    else:
+        print("We are unable to locate your country. Please use option \"3\" to manually search your country")
 
 getCountry()
 
