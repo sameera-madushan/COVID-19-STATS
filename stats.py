@@ -81,9 +81,12 @@ def getCountry():
     url = ("https://api.hackertarget.com/geoip/?q={}").format(my_ip)
     result = requests.get(url).content.decode('utf-8')
     search = re.search(r'Country: (.*)',result).group(1)
-    print("\nIt looks like you are in {}.".format(search))
-    print("Here are the stats related to your country. (If this prediction is incorrect use option \"3\")\n")
-    country(y=search)
+    if search:
+        print("\nIt looks like you are in {}.".format(search))
+        print("Here are the stats related to your country. (If this prediction is incorrect use option \"3\")\n")
+        country(y=search)
+    else:
+        print("We are unable to locate your country. Please use option \"3\" to manually search your country")
 
 getCountry()
 
