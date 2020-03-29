@@ -40,3 +40,13 @@ python stats.py
 
 ## License
 GPL-3.0 ©[sameera-madushan](https://github.com/sameera-madushan)
+
+## Contributors
+
+Thanks goes to these wonderful people.
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/currychris"><img src="https://avatars0.githubusercontent.com/u/38907412?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Christoph Gotschlich</b></sub></a></td>
+
+</table>
