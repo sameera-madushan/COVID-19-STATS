@@ -2,6 +2,10 @@
 
 > Stay Home, Stay Safe!
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/55880211/78421119-ee9f7b80-7672-11ea-8f11-c168d97e864f.png">
+</p>
+
 Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. People all around the world are eager to get up-to-date and accurate information as quickly as possible about this epidemic. 
 
 This python script will help you to get up-to-date and accurate statistics about confirmed cases, deaths, recovered and many more about this outbreak just from your command line. 
