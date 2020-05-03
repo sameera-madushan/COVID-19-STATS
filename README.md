@@ -21,7 +21,7 @@ This program uses endpoints of [NovelCOVID](https://github.com/novelcovid/api) A
 
 ![test](https://user-images.githubusercontent.com/55880211/77434525-02431a80-6e07-11ea-8305-25280c3dbd11.gif)
 
-### Git Installation
+## Git Installation
 ```
 # clone the repo
 $ git clone https://github.com/sameera-madushan/COVID-19-STATS.git
@@ -38,7 +38,7 @@ $ pip3 install -r requirements.txt
 ```
 python stats.py
 ```
-### Support & Contributions
+## Support & Contributions
 - Please ⭐️ this repository if this project helped you!
 - Contributions of any kind welcome!
 
