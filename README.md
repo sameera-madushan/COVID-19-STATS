@@ -10,7 +10,7 @@ Coronavirus disease (COVID-19) is an infectious disease caused by a newly discov
 
 This python script will help you to get up-to-date and accurate statistics about confirmed cases, deaths, recovered and many more about this outbreak just from your command line. 
 
-This program uses endpoints of [NovelCOVID](https://github.com/novelcovid/api) API as the data source and [IP Location Finder by KeyCDN](https://tools.keycdn.com/geo) to find your geolocation.
+This program uses endpoints of [NovelCOVID](https://corona.lmao.ninja/) API as the data source and [IP Location Finder by KeyCDN](https://tools.keycdn.com/geo) to find your geolocation.
 
 ## Features
 - [x] Get all total cases, recovery, and deaths.
