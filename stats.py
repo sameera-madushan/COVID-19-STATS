@@ -2,15 +2,15 @@ import requests
 import re
 
 def all():
-    url = "https://corona.lmao.ninja/all"
+    url = "https://corona.lmao.ninja/v2/all"
     t = requests.get(url).json()
-    print("Global Stats")
+    print("[x] Global Stats [x]")
     for k,v in t.items():
         if k == "updated":
             continue
         _key = str(k).capitalize()
         _value = str(v).capitalize()
-        print(" "+ _key + ":" + _value, end='')
+        print(" "+ _key + ": " + _value)
 
 print(r'''
   ___  __   _  _  __  ____        __  ___     ____  ____  __  ____  ____ 
@@ -24,11 +24,12 @@ print(r'''
 all()
 
 def allcountries():
-    url = "https://corona.lmao.ninja/countries"
+    url = "https://corona.lmao.ninja/v2/countries"
     t = requests.get(url).json()
 
     print ("{:<25} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format('Country', 'Cases', 'TodayCases', 'Deaths', 'TodayDeaths', 'Recovered', 'Critical', 'CasesPerOneMillion') + "\n") 
     for i in t:
+
         a = str(i['country'])
         b = str(i['cases'])
         c = str(i['todayCases'])
@@ -41,7 +42,7 @@ def allcountries():
         print ("{:<25} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format(a, b, c, d, e, f, g, h))
 
 def sort(x):
-    url = ("https://corona.lmao.ninja/countries?sort={}").format(x)
+    url = ("https://corona.lmao.ninja/v2/countries?sort={}").format(x)
     t = requests.get(url).json()
 
     print ("{:<25} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format('Country', 'Cases', 'TodayCases', 'Deaths', 'TodayDeaths', 'Recovered', 'Critical', 'CasesPerOneMillion') + "\n") 
@@ -58,7 +59,7 @@ def sort(x):
         print ("{:<25} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format(a, b, c, d, e, f, g, h))
 
 def country(y):
-    url = ("https://corona.lmao.ninja/countries/{}?strict=true").format(y)
+    url = ("https://corona.lmao.ninja/v2/countries/{}?strict=true").format(y)
     req = requests.get(url).content.decode('utf-8')
     if req:
         check = re.search(r'Country not found',req)
