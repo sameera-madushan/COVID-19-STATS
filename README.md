@@ -1,3 +1,4 @@
+# *** This project is not maintained anymore ***
 # COVID-19-STATS
 
 > Stay Home, Stay Safe!
